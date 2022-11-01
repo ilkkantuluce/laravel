@@ -19,7 +19,4 @@ Route::get('/', function () {
 });
 
 
-
-Storage::disk('local')->put('users.txt', 'ilkkan pass');
-
 Route::post('login/check', [LoginController::class, 'check']);
